@@ -6,10 +6,13 @@
 body {
     background-color: #f9fafc;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 nav {
     margin-left: 8px;
+    width: 90%;
 }
 
 ul {
@@ -23,7 +26,6 @@ button {
     color: #fff;
     background-color: #000;
     border-radius: 66px;
-    width: 90%;
     height: 2rem;
     margin-left: 8px;
 }
@@ -39,6 +41,7 @@ footer {
     justify-content: space-between;
     margin-left: 0;
     padding-left: 0;
+    align-items: center;
 }
 
 p {
@@ -62,16 +65,39 @@ h3 {
 a {
     color: #69696a;
     text-decoration: none;
-  }
+}
+
+button:hover {
+    background-color: #141414;
+}
   
 a:hover {
       color: silver;
       background-position: 100% 100%;
       background-size: 100% 2px;
-    }
+}
+
+button:active {
+    background-color: #3b3a3a;
+}
+
+
 
     
 /*Class Styles*/
+
+.b1 {
+    width: 100%;
+    margin-left: 0;
+}
+
+.t1 {
+    min-width: 110px;
+}
+
+.b2 {
+    width: 90%;
+}
 
 .li1 {
     padding-bottom: .5rem;
@@ -81,11 +107,11 @@ a:hover {
     padding-bottom: .5rem;
 }
 
-.footer-title {
+/* .footer-title {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .links {
     display: flex;
@@ -95,4 +121,91 @@ a:hover {
 
 .links a {
     padding-right: 8px;
+}
+
+/* Media Queries*/
+
+@media only screen and (min-width: 768px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 225px;
+      }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .b2 {
+        width: 100%;
+    }
+
+    .b1 {
+        max-width: 100px;
+        margin-right: 15px;
+    }
+
+    .navbar {
+        padding-bottom: 0;
+    }
+
+    main {
+        display: flex;
+        height: 100%;
+    }
+    
+    article {
+        width: 50%
+    }
+
+    aside {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .circle {
+        border-radius: 50%;
+        
+    }
+    
+    .c1 {
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 175px;
+        height: 175px;
+        position: relative;
+        left: -70px;
+    }
+    .c2 {
+        position: relative;
+        background-color: rgba(247, 193, 162, 0.7);
+        opacity: 0.9;
+        width: 125px;
+        height: 125px;
+        left: 30px;
+        bottom: 80px;
+        z-index: 5;
+    }
+    .c3 {
+        position: relative;
+        background-color: rgba(207, 130, 213, 0.6);
+        opacity: 0.8;
+        width: 100px;
+        height: 100px;
+        bottom: 270px;
+        left: 60px;
+    }
+
 }
